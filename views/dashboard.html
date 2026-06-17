@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - Personal Notes Keeper</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <h2>📝 My Notes <span id="welcomeUser"></span></h2>
+  <button id="logoutBtn">Log Out</button>
+</div>
+
+<div class="dashboard-container">
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search notes by title or content...">
+  </div>
+
+  <form class="note-form" id="noteForm">
+    <input type="hidden" id="noteId">
+    <input type="text" id="noteTitle" placeholder="Note title" required>
+    <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+    <button type="submit" id="saveBtn">Add Note</button>
+    <button type="button" id="cancelEditBtn">Cancel</button>
+  </form>
+
+  <div class="notes-grid" id="notesGrid"></div>
+  <p class="empty-msg" id="emptyMsg" style="display:none;">No notes yet. Create your first one above.</p>
+
+</div>
+
+<script src="/js/notes.js"></script>
+</body>
+</html>

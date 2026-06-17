@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register - Personal Notes Keeper</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-box">
+    <h1>Create Account</h1>
+    <div class="error-msg" id="errorMsg"></div>
+    <form id="registerForm">
+      <input type="text" id="username" placeholder="Username" required minlength="3">
+      <input type="password" id="password" placeholder="Password (min 6 chars)" required minlength="6">
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="/">Log in here</a></p>
+  </div>
+</div>
+
+<script src="/js/auth.js"></script>
+</body>
+</html>
